@@ -15,7 +15,7 @@ A high-end architecture/interior portfolio inspired by premium studio UX pattern
 - next/image optimization
 - SEO metadata + JSON-LD + sitemap + robots
 
-## Run locally
+## Run locally only
 
 ```bash
 npm install
