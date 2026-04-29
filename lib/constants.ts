@@ -17,7 +17,7 @@ export type Project = {
 export const SITE = {
   name: "Vinay Interiors",
   legalName: "Vinay Interiors Hyderabad",
-  siteUrl: "https://vinayatelier.com",
+  siteUrl: "https://vinayinteriors.in",
   email: "vinayinteriors@gmail.com",
   phone: "+91 9866618370",
   address: "Gachibowli, Hyderabad - 500032, Telangana, India.",

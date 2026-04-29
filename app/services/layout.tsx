@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Interior Design Services Hyderabad | Modular Kitchen, False Ceiling, Wardrobes, Home Automation",
-  description: "Vinay Interiors offers 8 specialist interior design services in Hyderabad: modular kitchens, wardrobes & cupboards, false ceilings, office interiors, home theater, main door elevation, home automation & pest control. Serving Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally, Tellapur, Financial District, Nanakaramguda, Nallagandla, Manikonda and all of Hyderabad. Free consultation.",
+  title: "Interior Design Services Hyderabad | Vinay Interiors",
+  description: "Modular kitchens, wardrobes, false ceilings & office interiors in Hyderabad. Gachibowli · Madhapur · HITEC City · Kondapur. Free consultation: +91 9866618370.",
   path: "/services",
   keywords: [
     "interior design services Hyderabad", "modular kitchen designer Hyderabad",

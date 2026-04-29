@@ -4,8 +4,8 @@ import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Vinay Interiors Hyderabad | Free Interior Design Consultation +91 9866618370",
-  description: "Get a free interior design consultation from Vinay Interiors — Hyderabad's trusted studio since 2014. Call +91 9866618370 or fill the form. We offer free site visits across Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally, LB Nagar, Nagole, Uppal, Kothapet and all of Hyderabad.",
+  title: "Contact Vinay Interiors | Free Consultation Hyderabad",
+  description: "Get a free interior design site visit across Hyderabad. Serving Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally & more. Call +91 9866618370 today.",
   path: "/contact",
   keywords: [
     "contact interior designer Hyderabad", "interior design consultation Hyderabad",

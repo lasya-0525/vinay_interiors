@@ -8,8 +8,8 @@ import TeamCard from "@/components/TeamCard/TeamCard";
 
 
 export const metadata: Metadata = buildMetadata({
-  title: "About Vinay Interiors | Hyderabad Interior Design Studio Since 2014 | 200+ Projects",
-  description: "Vinay Interiors is Hyderabad's trusted interior design studio since 2014. 200+ residential and commercial projects completed across Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally, Tellapur, Financial District, Nanakaramguda, Nallagandla and Manikonda. Meet the team and explore our design philosophy.",
+  title: "About Vinay Interiors | Interior Design Studio Hyderabad",
+  description: "Hyderabad's trusted interior design studio since 2014. 200+ projects across Gachibowli, Madhapur, HITEC City, Kondapur & all of Hyderabad. Meet the team.",
   path: "/about",
   keywords: [
     "about Vinay Interiors", "Vinay Interiors Hyderabad", "interior design studio Hyderabad",

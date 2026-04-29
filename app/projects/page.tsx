@@ -5,8 +5,8 @@ import { PROJECTS } from "@/lib/constants";
 import { SwipeCarousel } from "@/components/SwipeCarousel/SwipeCarousel";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Interior Design Projects Portfolio | Hyderabad — Gachibowli, Madhapur, LB Nagar & More",
-  description: "Explore Vinay Interiors' portfolio of luxury residential villas, commercial offices, and full renovation projects across Gachibowli, Madhapur, HITEC City, Raidurg, Jubilee Hills, LB Nagar, Nagole, Uppal, Saroornagar, Kothapet and Hyderabad.",
+  title: "Interior Design Portfolio Hyderabad | Vinay Interiors",
+  description: "Browse 200+ luxury interior design projects in Hyderabad — residential villas, offices & renovations across Gachibowli, Madhapur, HITEC City, Jubilee Hills & more.",
   path: "/projects",
   keywords: [
     "interior design projects Hyderabad", "interior design portfolio Hyderabad",

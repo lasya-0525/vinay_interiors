@@ -614,10 +614,10 @@ const OG_IMAGE =
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE.siteUrl),
   title: {
-    default: `${SITE.name} | Best Interior Designer Hyderabad – Gachibowli, Madhapur, Kondapur, Miyapur`,
-    template: `%s | ${SITE.name}`,
+    default: "Best Interior Designer in Hyderabad | Vinay Interiors",
+    template: `%s | Vinay Interiors`,
   },
-  description: BASE_DESCRIPTION,
+  description: "Hyderabad's #1 interior design studio since 2014. Modular kitchens, wardrobes, false ceilings & office interiors. 200+ projects. Free consultation: +91 9866618370.",
   keywords: KEYWORDS,
   authors: [{ name: SITE.name, url: SITE.siteUrl }],
   icons: {
@@ -777,7 +777,7 @@ export const organizationJsonLd = {
     {
       "@type": "PropertyValue",
       name: "llms.txt",
-      value: "https://vinayatelier.com/llms.txt",
+      value: "https://vinayinteriors.in/llms.txt",
     },
   ],
   geo: { "@type": "GeoCoordinates", latitude: "17.3850", longitude: "78.4867" },
