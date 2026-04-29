@@ -9,10 +9,11 @@ import MarqueeStrip from "@/components/MarqueeStrip/MarqueeStrip";
 import ServiceAreas from "@/components/ServiceAreas/ServiceAreas";
 import { PROJECTS } from "@/lib/constants";
 import { buildMetadata, homepageFaqJsonLd, speakableJsonLd, KEYWORDS } from "@/lib/seo";
+import HomeFAQ from "@/components/HomeFAQ/HomeFAQ";
 
 export const metadata: Metadata = buildMetadata({
   title: "Best Interior Designer in Hyderabad | Vinay Interiors",
-  description: "Hyderabad's #1 interior design studio since 2014. Modular kitchens, wardrobes, false ceilings & office interiors. 200+ projects. Free consultation: +91 9866618370.",
+  description: "Hyderabad's #1 interior design studio since 2014. Modular kitchens, wardrobes, false ceilings & office interiors. 200+ projects. Free: +91 9866618370.",
   path: "/",
   keywords: KEYWORDS,
 });
@@ -38,6 +39,7 @@ export default function Home() {
       <ServicesSection />
       <Testimonials />
       <ServiceAreas />
+      <HomeFAQ />
       <CTASection />
     </>
   );

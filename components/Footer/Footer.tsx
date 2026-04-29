@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { SITE, NAV_LINKS } from "@/lib/constants";
 
 const SOCIALS = [
@@ -20,9 +21,11 @@ export default function Footer() {
           {/* Brand */}
           <div style={{ maxWidth: "300px" }}>
             <Link href="/" style={{ textDecoration: "none" }}>
-              <img
+              <Image
                 src="/logo.webp"
                 alt="Vinay Interiors"
+                width={200}
+                height={120}
                 style={{
                   height: "120px",
                   width: "auto",

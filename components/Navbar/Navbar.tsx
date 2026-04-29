@@ -40,7 +40,7 @@ export default function Navbar() {
         style={{
           maxWidth: "1280px",
           margin: "0 auto",
-          minHeight: scrolled ? "100px" : "180px",
+          minHeight: scrolled ? "72px" : "120px",
           transition: "min-height 0.4s ease",
         }}
         aria-label="Main navigation"
@@ -61,7 +61,7 @@ export default function Navbar() {
             height={150}
             priority
             style={{
-              height: scrolled ? "70px" : "150px",
+              height: scrolled ? "56px" : "90px",
               width: "auto",
               transition: "height 0.4s ease",
               filter: isDarkPage && !scrolled ? "brightness(0) invert(1)" : "none",

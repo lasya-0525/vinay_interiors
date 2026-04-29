@@ -617,7 +617,7 @@ export const defaultMetadata: Metadata = {
     default: "Best Interior Designer in Hyderabad | Vinay Interiors",
     template: `%s | Vinay Interiors`,
   },
-  description: "Hyderabad's #1 interior design studio since 2014. Modular kitchens, wardrobes, false ceilings & office interiors. 200+ projects. Free consultation: +91 9866618370.",
+  description: "Hyderabad's #1 interior design studio since 2014. Modular kitchens, wardrobes, false ceilings & office interiors. 200+ projects. Free: +91 9866618370.",
   keywords: KEYWORDS,
   authors: [{ name: SITE.name, url: SITE.siteUrl }],
   icons: {
@@ -733,7 +733,7 @@ export const websiteJsonLd = {
 // ─── Organization / LocalBusiness JSON-LD ───────────────────────────────────
 export const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": ["InteriorDesignCompany", "LocalBusiness", "HomeAndConstructionBusiness"],
+  "@type": ["Organization", "LocalBusiness", "InteriorDesignCompany", "HomeAndConstructionBusiness"],
   "@id": `${SITE.siteUrl}/#organization`,
   name: SITE.legalName,
   alternateName: ["Vinay Interiors", "Vinay Atelier", "Vinay Interiors Hyderabad"],
