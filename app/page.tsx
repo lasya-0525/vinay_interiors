@@ -8,7 +8,7 @@ import CTASection from "@/components/CTASection/CTASection";
 import MarqueeStrip from "@/components/MarqueeStrip/MarqueeStrip";
 import ServiceAreas from "@/components/ServiceAreas/ServiceAreas";
 import { PROJECTS } from "@/lib/constants";
-import { buildMetadata, homepageFaqJsonLd, KEYWORDS } from "@/lib/seo";
+import { buildMetadata, homepageFaqJsonLd, speakableJsonLd, KEYWORDS } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Best Interior Designer Hyderabad | Gachibowli, Madhapur, Kondapur, Miyapur, Bachupally, Financial District",
@@ -24,6 +24,11 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqJsonLd) }}
+      />
+      {/* Speakable + mentions schema — used by Google SGE, AI Overviews, and voice search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
       <Hero />
       <MarqueeStrip />

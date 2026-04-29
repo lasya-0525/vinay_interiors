@@ -4,8 +4,8 @@ import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Interior Designer Hyderabad | Free Consultation — Gachibowli, LB Nagar, Uppal",
-  description: "Book a free design consultation with Vinay Interiors — Hyderabad's premium interior design studio. We serve Gachibowli, Madhapur, HITEC City, Raidurg, LB Nagar, Nagole, Uppal, Saroornagar, Kothapet and all surrounding areas. Call +91 9866618370.",
+  title: "Contact Vinay Interiors Hyderabad | Free Interior Design Consultation +91 9866618370",
+  description: "Get a free interior design consultation from Vinay Interiors — Hyderabad's trusted studio since 2014. Call +91 9866618370 or fill the form. We offer free site visits across Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally, LB Nagar, Nagole, Uppal, Kothapet and all of Hyderabad.",
   path: "/contact",
   keywords: [
     "contact interior designer Hyderabad", "interior design consultation Hyderabad",
@@ -31,10 +31,13 @@ export default function ContactPage() {
       />
       <section style={{ background: "#111111", padding: "10rem 2.5rem 6rem", textAlign: "center" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "2rem" }}>Contact</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "2rem" }}>Free Consultation · Hyderabad</p>
           <h1 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(2.5rem,6vw,5rem)", lineHeight: 1, color: "#ffffff" }}>
             Let&apos;s Build Something Exceptional
           </h1>
+          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", marginTop: "1.5rem", lineHeight: 1.7 }}>
+            Interior design consultation · Free site visit · Hyderabad
+          </p>
         </div>
       </section>
 
@@ -48,7 +51,8 @@ export default function ContactPage() {
             {[
               { label: "Phone", value: SITE.phone, href: `tel:${SITE.phone}` },
               { label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
-              { label: "Address", value: SITE.address, href: undefined },
+              { label: "Headquarters", value: SITE.address, href: undefined },
+              { label: "Factory", value: SITE.factoryAddress, href: undefined },
             ].map(item => (
               <div key={item.label}>
                 <p style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", color: "#999999", marginBottom: "0.35rem" }}>{item.label}</p>

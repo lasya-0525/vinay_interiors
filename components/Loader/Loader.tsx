@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Loader() {
   const [loading, setLoading] = useState(true);
@@ -9,14 +10,14 @@ export default function Loader() {
 
   useEffect(() => {
     let frame = 0;
-    const total = 80;
+    const total = 50; // reduced from 80 — faster perceived load
     const timer = setInterval(() => {
       frame++;
       const ease = 1 - Math.pow(1 - frame / total, 3);
       setPct(Math.min(Math.round(ease * 100), 100));
       if (frame >= total) clearInterval(timer);
     }, 17);
-    const exit = setTimeout(() => setLoading(false), 1900);
+    const exit = setTimeout(() => setLoading(false), 1200); // reduced from 1900ms — improves FCP
     return () => { clearInterval(timer); clearTimeout(exit); };
   }, []);
 
@@ -68,19 +69,26 @@ export default function Loader() {
             </motion.p>
 
             <div style={{ overflow: "hidden" }}>
-              <motion.img
-                src="/logo.webp"
-                alt="Vinay Interiors"
-                style={{
-                  height: "200px",
-                  width: "auto",
-                  filter: "brightness(0) invert(1)",
-                  margin: "0 auto"
-                }}
+              <motion.div
                 initial={{ y: "100%", opacity: 0 }}
                 animate={{ y: "0%", opacity: 1 }}
                 transition={{ duration: 0.9, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              />
+              >
+                <Image
+                  src="/logo.webp"
+                  alt="Vinay Interiors"
+                  width={300}
+                  height={200}
+                  priority
+                  style={{
+                    height: "200px",
+                    width: "auto",
+                    filter: "brightness(0) invert(1)",
+                    margin: "0 auto",
+                    display: "block",
+                  }}
+                />
+              </motion.div>
             </div>
 
             <motion.div

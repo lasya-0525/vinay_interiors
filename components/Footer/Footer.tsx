@@ -76,8 +76,12 @@ export default function Footer() {
               </a>
               <a href={`mailto:${SITE.email}`} style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>{SITE.email}</a>
               <div style={{ marginTop: "0.25rem" }}>
-                <p style={{ fontSize: "0.7rem", color: "#c5a46d", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700, marginBottom: "0.35rem" }}>Headquarters: Gachibowli</p>
+                <p style={{ fontSize: "0.7rem", color: "#c5a46d", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700, marginBottom: "0.35rem" }}>Headquarters</p>
                 <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}>{SITE.address}</p>
+              </div>
+              <div style={{ marginTop: "0.75rem" }}>
+                <p style={{ fontSize: "0.7rem", color: "#c5a46d", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 700, marginBottom: "0.35rem" }}>Factory</p>
+                <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}>{SITE.factoryAddress}</p>
               </div>
             </div>
           </div>

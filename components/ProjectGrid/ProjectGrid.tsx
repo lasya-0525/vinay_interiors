@@ -56,21 +56,13 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
           >
             <Link
               href="/projects"
+              className="link-gold-hover"
               style={{
                 fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase",
                 textDecoration: "none", color: "#111111",
                 borderBottom: "1px solid #111111", paddingBottom: "3px",
-                transition: "all 0.3s ease",
                 display: "inline-block",
                 fontWeight: 600,
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.color = "#c5a46d";
-                e.currentTarget.style.borderBottomColor = "#c5a46d";
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.color = "#111111";
-                e.currentTarget.style.borderBottomColor = "#111111";
               }}
             >
               View All Projects →
@@ -118,16 +110,14 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
           </p>
           <Link
             href="/projects"
+            className="btn-dark-hover"
             style={{
               fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
               textDecoration: "none", color: "#ffffff",
               background: "#111111", padding: "1.25rem 2.5rem",
-              transition: "all 0.3s ease",
               display: "inline-block",
               fontWeight: 600,
             }}
-            onMouseEnter={e => { e.currentTarget.style.background = "#c5a46d"; }}
-            onMouseLeave={e => { e.currentTarget.style.background = "#111111"; }}
           >
             See All Projects
           </Link>

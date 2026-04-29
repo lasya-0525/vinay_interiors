@@ -11,6 +11,9 @@ export default function CursorFollower() {
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
+    // Don't attach listeners on touch-only devices — saves event overhead and avoids cursor flash
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+
     const onMove = (e: MouseEvent) => {
       x.set(e.clientX - 16);
       y.set(e.clientY - 16);
@@ -21,9 +24,9 @@ export default function CursorFollower() {
     };
     const onLeave = () => setHovered(false);
 
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseover", onEnter);
-    window.addEventListener("mouseout", onLeave);
+    window.addEventListener("mousemove", onMove, { passive: true });
+    window.addEventListener("mouseover", onEnter, { passive: true });
+    window.addEventListener("mouseout", onLeave, { passive: true });
     return () => {
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("mouseover", onEnter);

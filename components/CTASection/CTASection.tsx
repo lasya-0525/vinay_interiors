@@ -52,16 +52,14 @@ export default function CTASection() {
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           <a
             href="tel:+919866618370"
+            className="footer-cta-btn"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.6rem",
               fontSize: "0.75rem", letterSpacing: "0.2em", textTransform: "uppercase",
               textDecoration: "none", padding: "1rem 2.5rem",
               background: "#c5a46d", color: "#ffffff",
-              transition: "all 0.3s",
               fontWeight: 700,
             }}
-            onMouseEnter={e => (e.currentTarget.style.background = "#b8975e")}
-            onMouseLeave={e => (e.currentTarget.style.background = "#c5a46d")}
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
@@ -70,40 +68,24 @@ export default function CTASection() {
           </a>
           <Link
             href="/contact"
+            className="footer-view-btn"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
               fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase",
               textDecoration: "none", padding: "1rem 2.5rem",
               border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.7)",
-              transition: "all 0.3s",
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.borderColor = "#c5a46d";
-              e.currentTarget.style.color = "#c5a46d";
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)";
-              e.currentTarget.style.color = "rgba(255,255,255,0.7)";
             }}
           >
             Inquiry →
           </Link>
           <Link
             href="/projects"
+            className="footer-view-btn"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
               fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase",
               textDecoration: "none", padding: "1rem 2rem",
               border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.7)",
-              transition: "all 0.3s",
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.borderColor = "#c5a46d";
-              e.currentTarget.style.color = "#c5a46d";
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)";
-              e.currentTarget.style.color = "rgba(255,255,255,0.7)";
             }}
           >
             View Our Work

@@ -15,16 +15,17 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
       syncTouch: false,
     });
 
+    let rafId: number;
     const raf = (time: number) => {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     };
-
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     lenis.on("scroll", ScrollTrigger.update);
 
     return () => {
+      cancelAnimationFrame(rafId); // prevent memory leak from orphaned RAF loop
       lenis.destroy();
     };
   }, []);

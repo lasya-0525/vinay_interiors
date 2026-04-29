@@ -96,16 +96,14 @@ export default function ServicesSection() {
             </p>
             <Link
               href="/services"
+              className="link-gold-hover"
               style={{
                 fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase",
                 textDecoration: "none", color: "#111111",
                 borderBottom: "1px solid #111111", paddingBottom: "3px",
-                transition: "all 0.3s ease",
                 display: "inline-block",
                 fontWeight: 600,
               }}
-              onMouseEnter={e => { e.currentTarget.style.color = "#c5a46d"; e.currentTarget.style.borderBottomColor = "#c5a46d"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.borderBottomColor = "#111111"; }}
             >
               All Services →
             </Link>

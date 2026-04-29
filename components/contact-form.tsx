@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SITE } from "@/lib/constants";
 
 const inputStyle = {
   width: "100%",
@@ -116,7 +117,7 @@ export default function ContactForm() {
       </button>
 
       {status === "error" && (
-        <p style={{ fontSize: "0.85rem", color: "#c0392b" }}>Unable to send. Please email us directly at {/* SITE.email */}hello@vinayatelier.com</p>
+        <p style={{ fontSize: "0.85rem", color: "#c0392b" }}>Unable to send. Please email us directly at <a href={`mailto:${SITE.email}`} style={{ color: "#c0392b" }}>{SITE.email}</a></p>
       )}
     </form>
   );

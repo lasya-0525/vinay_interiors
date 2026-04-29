@@ -3,14 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 export default function AboutSection() {
-  const { ref } = useInView({ threshold: 0.2, triggerOnce: true });
-
   return (
     <section
-      ref={ref}
       style={{
         maxWidth: "1280px", margin: "0 auto", padding: "10rem 2.5rem",
         display: "grid", gridTemplateColumns: "1fr", gap: "5rem",
@@ -78,14 +74,13 @@ export default function AboutSection() {
 
         <Link
           href="/about"
+          className="link-gold-hover"
           style={{
             display: "inline-flex", alignItems: "center", gap: "0.75rem",
             fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
             textDecoration: "none", color: "#111111", borderBottom: "1px solid #111111",
-            paddingBottom: "3px", transition: "color 0.25s, border-color 0.25s"
+            paddingBottom: "3px",
           }}
-          onMouseEnter={e => { e.currentTarget.style.color = "#c5a46d"; e.currentTarget.style.borderColor = "#c5a46d"; }}
-          onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.borderColor = "#111111"; }}
         >
           Discover the Studio →
         </Link>

@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SITE } from "@/lib/constants";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -53,9 +54,12 @@ export default function Navbar() {
             textDecoration: "none",
           }}
         >
-          <img
+          <Image
             src="/logo.webp"
             alt="Vinay Interiors"
+            width={220}
+            height={150}
+            priority
             style={{
               height: scrolled ? "70px" : "150px",
               width: "auto",
@@ -189,6 +193,20 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href={`tel:${SITE.phone}`}
+                  onClick={() => setOpen(false)}
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: "0.5rem",
+                    fontSize: "0.75rem", letterSpacing: "0.2em", textTransform: "uppercase",
+                    textDecoration: "none", padding: "0.85rem 2rem",
+                    background: "#c5a46d", color: "#ffffff", fontWeight: 700,
+                  }}
+                >
+                  Call Now
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}

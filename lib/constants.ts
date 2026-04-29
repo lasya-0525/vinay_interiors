@@ -20,7 +20,8 @@ export const SITE = {
   siteUrl: "https://vinayatelier.com",
   email: "vinayinteriors@gmail.com",
   phone: "+91 9866618370",
-  address: "#8-8-1/1, Chittireddy Complex, Green Park Colony, Sagar Road, Karmanghat, Hyderabad - 500079, Telangana, India.",
+  address: "Gachibowli, Hyderabad - 500032, Telangana, India.",
+  factoryAddress: "House No. 3-100/3, Alinagar, Chetlapotharam Village, Gaddapotharam Panchayat, Jinnaram Mandal, Sangareddy District, Hyderabad, Telangana - 502319.",
   social: {
     instagram: "https://instagram.com/vinayinteriors",
     behance: "https://behance.net",

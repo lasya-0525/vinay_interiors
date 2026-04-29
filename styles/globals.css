@@ -195,8 +195,10 @@ html.lenis body {
   background: #c5a46d !important;
 }
 
-.img-zoom .zoom-inner {
-  transition: transform 0.85s cubic-bezier(0.25, 1, 0.5, 1);
+/* ─── Floating call icon pulse ──────────────────────── */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
 /* ─── Footer grid (responsive) ──────────────────────── */
